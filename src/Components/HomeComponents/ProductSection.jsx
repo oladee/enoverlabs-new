@@ -116,13 +116,13 @@ export const Card = ({ img, headText, subText }) => {
       <img src={img} alt="subText" className="cardImg" />
       <section>
         <div>
-          <H4>{headText}</H4>
-          <P color="#F7F7F7" pb="1.8rem">
+          <H4 fs="clamp(14px,4.20vw,18px)" mdfs="clamp(18px,1.322vw,20px)" >{headText}</H4>
+          <P fs="clamp(12px,3.27vw,14px)" mdfs="clamp(14px,1.05vw,16px)" color="#F7F7F7" pb="1rem">
             {subText}
           </P>
         </div>
         <Flex gap="8px" justify="none" mdjustify="end">
-          <H4 fs="1.6rem">Learn more</H4>
+          <H4 fs="clamp(12px,3.73vw,16px)" mdfs="clamp(18px,1.322vw,20px)">Learn more</H4>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
           <path d="M15.037 18.1567L13.626 16.7388L16.896 13.4838L3.29103 13.4707L3.29303 11.4707L16.861 11.4838L13.646 8.25375L15.063 6.84375L20.707 12.5138L15.037 18.1567Z" fill="white"/>
           </svg>
@@ -162,14 +162,14 @@ const StyledCard = styled.div`
     backdrop-filter: blur(6px);
     border-radius: 0px 0px 20px 20px;
     width: 100%;
-    padding: 16px 16px 12px 16px;
+    padding: 10px 16px 10px 16px;
   }
   img {
     border-radius: 20px;
   }
   @media (min-width: 1024px) {
     section {
-      padding: 20px 16px;
+      padding: 15px 16px;
     }
   }
 `;

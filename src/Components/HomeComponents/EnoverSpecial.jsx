@@ -153,11 +153,10 @@ width: 50%;
     width: 100%;
   }
   footer {
-    padding-top: 1.7rem;
+    padding: 1.2rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1.7rem;
   }
   @media (min-width: 1024px) {
     div {

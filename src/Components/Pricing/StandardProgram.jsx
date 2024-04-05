@@ -44,7 +44,7 @@ const StandardProgram = () => {
               <div className="program">
                 <div className="heading">
                   <H4 mdfs="2.3vw" fw="700">
-                    Online Program
+                    Online Training
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
@@ -133,7 +133,7 @@ const StandardProgram = () => {
                   mdpb="28px"
                   color="var(--Body-Text)"
                 >
-                  Program Details
+                  Training Details
                 </H4>
                 <div className="list">
                   {onlineProgram.map((pg) => (
@@ -153,7 +153,7 @@ const StandardProgram = () => {
               <div className="program">
                 <div className="heading">
                   <H4 mdfs="2.3vw" fw="700">
-                    On-site Program
+                    On-site Training
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
@@ -242,7 +242,7 @@ const StandardProgram = () => {
                   mdpb="28px"
                   color="var(--Body-Text)"
                 >
-                  Program Details
+                  Training Details
                 </H4>
                 <div className="list">
                   {OnsiteProgram.map((pg) => (
@@ -348,10 +348,10 @@ const StyledProgram = styled.div`
       color: #fff;
     }
     .programtext0::before {
-      content: "Online Program";
+      content: "Online Training";
     }
     .programtext1::before {
-      content: "On-Site Program";
+      content: "On-Site Training";
     }
   }
   .contain{

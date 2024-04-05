@@ -16,7 +16,7 @@ export const ClassTools = () => {
             <div className="tools-header">
             <h1>Class Tools</h1>
             <p>
-            Our online classes are designed around the latest  remote product management tools to keep you inline with the latest industry standards.
+            Below are industry-standard tools you would be exposed to during the course of our program
             </p>
             </div>
             <div className="tools-body">

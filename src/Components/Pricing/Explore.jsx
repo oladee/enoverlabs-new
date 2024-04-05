@@ -22,7 +22,7 @@ const Explore = () => {
                 }
             },
             640:{
-                slidesPerView : 2,
+                slidesPerView : 1.5,
                 autoplay : {
                     delay : 5000
                 }

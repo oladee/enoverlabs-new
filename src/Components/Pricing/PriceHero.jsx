@@ -98,7 +98,7 @@ const PriceHero = () => {
           <div className="benefits-card-container">
           <div className="benefits-card">
             <div className="card-head">
-              <P>Benefits of Being A Product Manager</P>
+              <P>Benefits of Becoming A Product Manager</P>
               <P></P>
             </div>
             <div
@@ -136,7 +136,7 @@ const PriceHero = () => {
               </div>
          
               <P className="sub-1">
-              Being a Product Manager makes it easy for you to get remote work, both locally and internationally. Most companies hiring product managers give product managers opportunity to work remotely.
+              Many companies hiring product managers gibe them  opportunity to work remotely or hybrid. Becoming a PM will make it easy to get remote or hybrid work, both locally and internationally.
               </P>
             </div>
             <div
@@ -155,7 +155,7 @@ const PriceHero = () => {
               </div>
             
               <P className="sub-1">
-              Product Managers are highly paid tech talents. A skilled product manager will earn an average of #300,000 - #500,000 or $3,000 - 5,000 monthly. More experienced product managers will earn even much more.
+              A skilled product manager will earn an average of ₦500,000 or $5,000 per month. More experienced product managers will earn even much more.
               </P>
             </div>
           </div>
