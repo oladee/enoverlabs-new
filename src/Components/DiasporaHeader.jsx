@@ -16,7 +16,7 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 
 const Header = ({ bgColor, bgColorMobile, navColor, blueProps }) => {
   const [active, setActive] = React.useState(false);
-  const [weightHome, setWeightHome] = React.useState("bold");
+  const [setWeightHome] = React.useState("bold");
   const [weightPricing, setWeightPricing] = React.useState("normal");
   const [weightBlog, setWeightBlog] = React.useState("normal");
   // const [weightResource, setWeightResource] = React.useState("normal");

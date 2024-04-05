@@ -28,7 +28,7 @@ const Explore = () => {
                 }
             },
             1024: {
-                slidesPerView : 2,
+                slidesPerView : 2.5,
                 spaceBetween: 15,
                 autoplay : {
                     delay : 5000

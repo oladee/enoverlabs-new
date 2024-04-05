@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../Utils/Theme";
 import { SuccessData } from "../../constants";
 import SuccessCard from "../Pricing/SuccessCard";
 import Slider from "react-slick";

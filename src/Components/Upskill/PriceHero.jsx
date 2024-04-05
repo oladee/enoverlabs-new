@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { H1, P } from "../../Utils/styled/Typograpyhy";
-import { AdvancedCard, BasicCard, Executive, OnsiteCard, TechnicalPM, GrowthPM } from "./ProgramCards";
+import { TechnicalPM, GrowthPM } from "./ProgramCards";
 // import BookCard from "../Resources/BookCard";
 // import Timer from "./Timer";
 // import abc from "../../assets/resources/abc.jpg"
