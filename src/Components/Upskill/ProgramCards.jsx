@@ -15,6 +15,7 @@ import PricingCard from "./PricingCard";
 import PricingList from "./PricingList";
 import { BasicData, AdvancedData, Onsite, ExecutiveData, TPMData, GrowthData } from "./PricingData";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 export const BasicCard = () => {
   return (
     <CardStyle>
@@ -202,9 +203,9 @@ export const OnsiteCard = () => {
             </div>
           </div>
           <div className="download-text-url">
-            <a href="">
+            <Link to="#">
               <p>Download Syllabus</p>
-            </a>
+            </Link>
           </div>
         </div>
 

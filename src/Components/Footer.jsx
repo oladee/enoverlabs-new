@@ -56,7 +56,7 @@ const Footer = ({p}) => {
           });
         }
       })
-      .catch((error) => {
+      .catch((er) => {
         toast.error("An error occured. Please try again", {
           position: "top-right",
           autoClose: 5000,
