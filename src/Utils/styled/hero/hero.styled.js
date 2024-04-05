@@ -43,7 +43,8 @@ export const StyledHeroHeader = styled.div`
 export const StyledHeroBody = styled.div`
   position: relative;
   .heroImg{
-    height: 12rem;
+    width: 100%;
+    height: 28.03vw;
   }
   .text{
     position: absolute;
@@ -62,11 +63,14 @@ export const StyledHeroBody = styled.div`
     span{
       font-size: 2.803vw;
     }
+
   }
   @media (min-width: 1024px) {
     .heroImg{
+    width: 100%;
     height: auto;
   }
+
     .text{
       bottom: 10px;
     h2{

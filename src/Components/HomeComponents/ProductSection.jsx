@@ -64,7 +64,7 @@ const ProductSection = () => {
             <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
               Standard Programs
             </H3>
-            <Flex wrap="wrap" gap="15px">
+            <Flex wrap="wrap" gap="15px" justify="center">
               {standardPrograms.map((programs) => (
                 <Card
                   img={programs.img}
@@ -78,7 +78,7 @@ const ProductSection = () => {
             <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
               Advanced Programs
             </H3>
-            <Flex wrap="wrap" gap="15px">
+            <Flex wrap="wrap" gap="15px" justify="center">
               {advancedPrograms.map((programs) => (
                 <Card
                   img={programs.img}
@@ -92,7 +92,7 @@ const ProductSection = () => {
             <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
               International Programs
             </H3>
-            <Flex wrap="wrap" gap="15px">
+            <Flex wrap="wrap" gap="15px" justify="center">
               {internationalPrograms.map((programs) => (
                 <Card
                   img={programs.img}
@@ -185,6 +185,9 @@ export const Flex = styled.div`
   padding-right: ${(props) => props.pr};
   padding-left: ${(props) => props.pl};
   justify-content: ${(props) => props.justify};
+  @media (min-width: 760px) {
+    flex-wrap: ${(props) => props.mediumwrap};
+  }
   @media (min-width: 1024px) {
     display: ${(props) => props.mddisplay || "flex"};
     gap: ${(props) => props.mdgap};

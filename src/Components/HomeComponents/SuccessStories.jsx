@@ -28,7 +28,7 @@ const SuccessStories = ({ bgColor }) => {
         </div>
 
         <div className="success-stories-slider">
-          <Slider {...settings}>
+          <Slider {...settings} className="daler">
             <SuccessCard {...SuccessData[0]} />
             <SuccessCard {...SuccessData[1]} />
             <SuccessCard {...SuccessData[2]} />
@@ -62,12 +62,14 @@ const StyledSuccessStories = styled.div`
     }
     .success-stories-cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, auto);
+      place-content: center;
+      place-items: center;
       column-gap: 1.25rem;
       row-gap: 1.25rem;
       margin-top: 2.5rem;
       @media (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, auto);
         display: none;
       }
     }
@@ -76,6 +78,8 @@ const StyledSuccessStories = styled.div`
       display: none;
       @media (max-width: 768px) {
         display: block;
+
+
         /* padding: 5% 5% 5% 0%; */
       }
     }

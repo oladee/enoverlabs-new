@@ -43,7 +43,7 @@ const EnoverSpecial = () => {
           </div>
         </section>
       </Flex>
-      <Flex display="block" mdalign="normal" gap="0.8rem" pt="1rem">
+      <main className="cardReview">
           <Flex  align="normal" mdwidth="50%" mdalign="normal" gap="0.8rem">
             <Firstcard>
               <H3 mdfs="2.116vw" fs="1.8rem">
@@ -76,7 +76,7 @@ const EnoverSpecial = () => {
                 <TertiaryButton Text="Learn More"/>
             </Fourthcard>
           </Flex>
-        </Flex>
+        </main>
     </Styledspecial>
   );
 };
@@ -100,6 +100,13 @@ const Styledspecial = styled.div`
       line-height: normal;
     }
   }
+  .cardReview{
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 8px;
+
+  }
   @media (min-width: 1024px) {
     padding: 10.7rem 9.6rem ;
     section {
@@ -111,8 +118,14 @@ const Styledspecial = styled.div`
         font-weight: 800;
       }
     }
+    .cardReview{
+      display:flex;
+      gap: 8px;
+      padding-top: 5px;
+    }
   }
 `;
+
 const Card = styled.div`
   border-radius: 12px;
   background: linear-gradient(
@@ -123,7 +136,7 @@ const Card = styled.div`
   backdrop-filter: blur(60px);
 `;
 const Firstcard = styled(Card)`
-    width:18.6rem;
+  width: 50%;
   padding: 11.4rem 4.3rem 6.4rem 2rem;
   @media (min-width: 1024px) {
     padding: 14.1rem 0rem 5.8rem 2.4rem;
@@ -131,7 +144,7 @@ const Firstcard = styled(Card)`
   }
 `;
 const Secondcard = styled(Card)`
-    width:18.6rem;
+width: 50%;
   div {
     padding: 4rem 0rem 7.5rem 1.6rem;
   }
@@ -144,7 +157,7 @@ const Secondcard = styled(Card)`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-bottom: 1.7rem; */
+    padding-bottom: 1.7rem;
   }
   @media (min-width: 1024px) {
     div {
@@ -154,16 +167,16 @@ const Secondcard = styled(Card)`
   }
 `;
 const Thirdcard = styled(Card)`
+  width: 50%;
   padding: 12.9rem 0rem 7.2rem 2.4rem;
-  width:18.6rem;
   @media (min-width: 1024px) {
     width:40%;
     padding: 10.5rem 3.2rem 5.8rem 5.8rem;
   }
 `;
 const Fourthcard = styled(Card)`
+  width: 50%;
   padding: 12.8rem 0rem 3rem 2.1rem;
-  width:18.6rem;
   @media (min-width: 1024px) {
     padding: 14.1rem 5.1rem 2.4rem 2.4rem;
     width:60%;

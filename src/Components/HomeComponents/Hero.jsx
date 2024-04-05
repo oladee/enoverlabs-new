@@ -6,7 +6,7 @@ import mobHeroImg from "../../assets/icon/mobHeroImg.png"
 import line from "../../assets/icon/Line 76.svg";
 
 const Hero = () => {
-  let src = `${mobHeroImg} 300w, ${deskheroImage1} 1024w,  `
+  let src = `${mobHeroImg} 300w, ${deskheroImage1} 1512w,  `
   let sizes = `(min-width: 1024px) 1024px, 300px`
   return (<div>
     <StyledHeroHeader>

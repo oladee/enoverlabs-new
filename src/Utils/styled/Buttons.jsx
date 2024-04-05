@@ -8,14 +8,13 @@ const color = theme.color;
 
 export const StyledNewButton = styled.button`
   padding: ${theme.fontSize.x} ${theme.fontSize.base};
-  font-size: ${theme.fontSize.sm};
+  font-size: clamp(12px,3.27vw,14px);
   color: #00f;
   border: 1px solid #00f;
   font-weight: 700;
   border-radius: 8px;
   @media (min-width: 1024px) {
-    font-size: ${theme.fontSize.sm};
-    font-size: ${theme.fontSize.lg};
+    font-size: clamp(16px,1.322vw, 20px) ;
     padding: ${theme.fontSize.x} ${theme.fontSize.base};
   }
 `;
