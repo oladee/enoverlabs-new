@@ -50,7 +50,7 @@ const StyledSuccessStories = styled.div`
   .success-stories-container {
     padding: 5% 5%;
     @media (max-width: 768px) {
-      padding: 5% 5% 15% 5%;
+      padding: 5% 2.4rem 15% 2.4rem;
     }
 
     .text-head {

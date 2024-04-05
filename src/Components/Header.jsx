@@ -37,11 +37,15 @@ const Header = ()=> {
       <CloseIcon size="3rem" onClick={toggle} />
       <SideBarBabies>
       {Menulist.map((menu, index) => <MenuItems onClick={toggle} 
-      link={menu.linkto}>{<motion.span {...framerText(index)}>
+      link={menu.linkto}>
+        {<motion.span {...framerText(index)}>
         {menu.linkName}
-        </motion.span>}</MenuItems>)}
+        </motion.span>}
+        </MenuItems>)}
       </SideBarBabies>
+      <motion.span {...framerText(3)}>
       <PrimaryButton Text='Contact Us'/>
+      </motion.span>
     </FramerSidebarPanel>
 
     </>) }

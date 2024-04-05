@@ -40,6 +40,49 @@ export const StyledHeroHeader = styled.div`
   }
 `;
 
+export const StyledHeroBody = styled.div`
+  position: relative;
+  .heroImg{
+    height: 12rem;
+  }
+  .text{
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    h2{
+      font-size: 5.607vw;
+      
+    }
+    img{
+      padding: 0 5px;
+    }
+    span{
+      font-size: 2.803vw;
+    }
+  }
+  @media (min-width: 1024px) {
+    .heroImg{
+    height: auto;
+  }
+    .text{
+      bottom: 10px;
+    h2{
+      font-size:3.17vw;
+      letter-spacing: 1.92px;
+
+    }
+    span{
+      font-size: 1.322vw;
+      letter-spacing: 0.8px;
+
+    }
+  }
+  }
+`
+
 export const StyledHeroFooter = styled.div`
   display: flex;
   justify-content: space-between;

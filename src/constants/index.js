@@ -24,6 +24,13 @@ import mainland1 from "../assets/icon/mainlandImgs/mainland1.png";
 import abj1 from "../assets/icon/abujaImgs/abj1.png";
 import berger1 from "../assets/icon/bergerImgs/berger1.png";
 import ib1 from "../assets/icon/ibadanImgs/ib1.png";
+import microvest from "../assets/icon/microvest.svg";
+import elite from "../assets/icon/ELITE DIGEST-01 1.png"
+import microsoft from "../assets/icon/microsoft.svg";
+import ulo from "../assets/icon/ulospaces.svg";
+import perxels from "../assets/icon/perxels.svg";
+
+
 export const standardPrograms = [
   {
     img: sp1,
@@ -173,4 +180,8 @@ export const FaqContent = [
       questionTitle:  "5. What are the benefits of becoming a Product Manager?",
       questionAnswer: "By becoming a Product Manager, you will build skills that will make you very valuable to any organization. You can work fully remote or hybrid for any company in the world, create a product that solves problems, earn a great salary for your effort, and make the lives of people better through the product solutions you create."
   }
+]
+
+export const partners = [
+  microvest, elite, microsoft, ulo, perxels
 ]

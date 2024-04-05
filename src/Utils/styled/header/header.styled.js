@@ -59,6 +59,7 @@ export const FramerSidebarPanel = styled(motion.div)`
   position: fixed;
   display: flex;
   flex-direction: column;
+  gap: 15px;
   padding: 10px 15px;
   bottom: 0;
   right: 0;

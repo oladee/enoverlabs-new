@@ -15,7 +15,7 @@ import { HashLink } from "react-router-hash-link";
 import logo from "../assets/enovLogo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Footer = () => {
+const Footer = ({p}) => {
   const scriptUrl =
     "https://script.google.com/macros/s/AKfycbwCaJuMGD_yGIFXpIJ2tPNsMV94U5ebGPfYwPnUnzJ_nwqyIzRPeSaZ-9Sq1Mk5GKZYCg/exec";
   const formRef = useRef(null);
@@ -116,7 +116,7 @@ const Footer = () => {
       });
   };
   return (
-    <StyledFooter>
+    <StyledFooter p={p}>
       <ToastContainer />
       <div className="footer-container">
         <div className="footer-left">
@@ -485,6 +485,8 @@ const Footer = () => {
 export default Footer;
 
 const StyledFooter = styled.div`
+  background-color: #F5FCFF;
+  padding: ${props => props.p};
   @media (max-width: 768px) {
     padding: 4rem 1.6rem;
     background-color: ${theme.color.lightBlue};

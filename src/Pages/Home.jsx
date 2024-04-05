@@ -9,22 +9,23 @@ import ProductSession from '../Components/HomeComponents/ProductSession'
 import ProductSection from '../Components/HomeComponents/ProductSection'
 import EnoverSpecial from '../Components/HomeComponents/EnoverSpecial'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
+import Partners from '../Components/HomeComponents/Partners'
+import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
   return (
-    <div
-    
-    >
+    <div>
        <Header/>
         <Hero/>
         <ProductSession/>
         <ProductSection/>
         <EnoverSpecial/>
+        <Partners/>
         <Testimonials/>
         <SuccessStories/>
         <Sessions/>
         <Started/>
-        <Footer/>
+        <Footer p="5rem 9.6rem 0 9.6rem"/>
     </div>
   )
 }

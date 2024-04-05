@@ -19,8 +19,8 @@ const Pricing = () => {
         <Explore/>
         <Testimonies/>
         <FaqSection/>
-        <Footer/>
     </StyledPricing>
+    <Footer p="5rem 9.6rem"/>
   </div>)
 }
 

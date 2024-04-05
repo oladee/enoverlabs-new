@@ -1,15 +1,28 @@
 import {  SecondaryButton } from '../../Utils/styled/Buttons'
-import { StyledHeroFooter, StyledHeroHeader } from '../../Utils/styled/hero/hero.styled'
+import { StyledHeroBody, StyledHeroFooter, StyledHeroHeader } from '../../Utils/styled/hero/hero.styled'
 import ACTD from '../../assets/icon/ACTD.png'
-import heroImage from "../../assets/Hero section image.jpg"
+import deskheroImage1 from "../../assets/icon/deskHeroImg.png"
+import mobHeroImg from "../../assets/icon/mobHeroImg.png"
+import line from "../../assets/icon/Line 76.svg";
 
 const Hero = () => {
+  let src = `${mobHeroImg} 300w, ${deskheroImage1} 1024w,  `
+  let sizes = `(min-width: 1024px) 1024px, 300px`
   return (<div>
     <StyledHeroHeader>
       <h1>Empowering You To Be An <span>EXCEPTIONAL</span> Product Manager</h1>
       <SecondaryButton Text='Explore Our Programs'/>
     </StyledHeroHeader>
-    <img src={heroImage} alt="Enoverlab Hero" />
+    <StyledHeroBody>
+    <img src={mobHeroImg} alt="Enoverlab Hero" 
+    srcSet={src} sizes={sizes} className='heroImg'
+     />
+    <div className='text'>
+      <h2>7K+ <span>Students</span></h2>
+      <img src={line} alt="" />
+      <h2>7+ <span>Locations</span></h2>
+    </div>
+    </StyledHeroBody>
     <StyledHeroFooter>
       <section>
         <p>Regardless of your background, you can become a skilled product manager in the next 6 months.</p>
