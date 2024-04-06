@@ -7,12 +7,17 @@ import { useClickAway } from "@uidotdev/usehooks";
 import { MdClose as CloseIcon } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { PrimaryButton } from "../Utils/styled/Buttons";
+import caret from "../assets/icon/caret.svg"
 
 const Header = ()=> {
   const [isOpen, setIsOpen] = useState(false)
   const ref = useClickAway(() => {
     setIsOpen(false);
   });
+
+  const [addlinks, setAddLinks]= useState(false)
+
+  const handleLinks = ()=> setAddLinks(!addlinks)
 
   const toggle = ()=> setIsOpen(!isOpen)
   return(<StyledHeader>
@@ -21,8 +26,28 @@ const Header = ()=> {
     </NavLink>
 
     <TopNavbabies>
-      <div>
-        
+      <div className="dropdown">
+      Programs <img src={caret} alt="" />
+        <div className="addLinks">
+          <header>
+            Standard
+          </header>
+          <main>
+          {standard.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+          <header>
+            Advanced
+          </header>
+          <main>
+          {advanced.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+          <header>
+            International
+          </header>
+          <main>
+          {international.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+        </div>
       </div>
       {Menulist.map(menu => <MenuItems link={menu.linkto}>{menu.linkName}</MenuItems>)}
     </TopNavbabies>
@@ -39,9 +64,34 @@ const Header = ()=> {
     <FramerSidebarPanel {...framerSidebarPanel} ref={ref}>
       <CloseIcon size="3rem" onClick={toggle} />
       <SideBarBabies>
+      <motion.span {...framerText(0)}>
+      <div>
+      <p onClick={handleLinks} className="dropdown">Programs <img src={caret} alt="" /></p>
+        {addlinks && (<div className="addLinks">
+          <header>
+            Standard
+          </header>
+          <main>
+          {standard.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+          <header>
+            Advanced
+          </header>
+          <main>
+          {advanced.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+          <header>
+            International
+          </header>
+          <main>
+          {international.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          </main>
+        </div>)}
+      </div>
+      </motion.span>
       {Menulist.map((menu, index) => <MenuItems onClick={toggle} 
       link={menu.linkto}>
-        {<motion.span {...framerText(index)}>
+        {<motion.span {...framerText(index + 1)}>
         {menu.linkName}
         </motion.span>}
         </MenuItems>)}
@@ -73,6 +123,43 @@ const MenuToggle = ({tog, open})=>{
      <MenuIcon size = "3rem"/>
   </Toggleview>)
 }
+
+const standard = [
+  {
+    linkName : 'Online Product Management',
+    linkto : '/program#online',
+  },
+  {
+    linkName : 'Onsite Product Management',
+    linkto : '/program#onsite',
+  },
+]
+
+const advanced = [
+  {
+    linkName : 'AI Product Management',
+    linkto : '/AI',
+  },
+  {
+    linkName : 'Growth Product Management',
+    linkto : '/growthpm',
+  },
+  {
+    linkName : 'Technical Product Management',
+    linkto : '/technicalpm',
+  },
+]
+
+const international = [
+  {
+    linkName : 'Diaspora Program',
+    linkto : '/diaspora',
+  },
+  {
+    linkName : 'Kenya Program',
+    linkto : '/kenya',
+  },
+]
 
 
 const Menulist = [

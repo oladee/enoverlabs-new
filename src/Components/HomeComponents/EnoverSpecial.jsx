@@ -162,6 +162,12 @@ width: 50%;
     div {
       padding: 1.8rem 5.7rem 6.1rem 2.4rem;
     }
+    footer {
+      padding: 1.9rem 0rem 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     width:40%;
   }
 `;

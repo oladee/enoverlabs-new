@@ -28,7 +28,8 @@ export const Toggleview = styled.div`
 
 export const TopNavbabies = styled.nav`
   display: none;
-  font-size: 1.6rem;
+  font-size: 1.33vw;
+  cursor: pointer;
   a {
     &:hover {
       color: #0088ff;
@@ -37,12 +38,73 @@ export const TopNavbabies = styled.nav`
   @media (min-width: 1024px) {
     display: flex;
     gap: 60px;
+    .dropdown {
+      position: relative;
+      display: flex;
+      img {
+        width: 20px;
+      }
+      .addLinks {
+        display : none;
+        border: 1px solid;
+        position: absolute;
+        background: #fff;
+        padding: 15px 4.5rem;
+        border-radius: 5px;
+        width: 320px;
+        top: 35px;
+        left: -15px;
+        z-index: 30;
+        header {
+          margin: 2.5rem 0;
+          font-weight: 700;
+        }
+        main {
+          font-size: 1.6rem;
+          font-weight: 400;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      &:hover{
+        .addLinks{
+          display: block;
+        }
+      }
+    }
   }
 `;
 export const SideBarBabies = styled(TopNavbabies)`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  gap: 25px;
+  .addLinks {
+    padding-left: 15px;
+    header {
+      font-size: 1.2rem;
+      margin: 2rem 0;
+      font-weight: 700;
+    }
+    main {
+      font-size: 0.8rem;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor:pointer ;
+    }
+    img {
+      width: 20px;
+    }
 `;
 
 export const FramerSidebar = styled(motion.div)`
