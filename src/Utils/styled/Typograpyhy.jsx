@@ -32,6 +32,7 @@ export const H2 = styled.h2`
   font-weight: ${(props) => props.fw || 700};
   text-align: ${(props) => props.tA};
   margin: ${(props) => props.margin || "0"};
+  margin-bottom: ${(props) => props.mb || "0"};
   padding: ${(props) => props.padding || "0"};
   line-height: ${(props) => props.lh};
   padding-top: ${(props) => props.t || "0"};
@@ -41,6 +42,7 @@ export const H2 = styled.h2`
     line-height: ${(props) => props.mdlh || "normal"};
     width: ${(props) => props.mdwidth};
     color: ${(props) => props.mdcolor || props.color};
+    margin-bottom: ${(props) => props.mdmb || "0"};
     padding-bottom: ${(props) => props.pmdb || "0"};
   }
 `;
