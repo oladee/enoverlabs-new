@@ -25,6 +25,7 @@ import NewPricing from './Pages/NewPricing'
 import Policy from './Pages/Policy'
 import Physical from './Pages/Physical'
 import {ChakraProvider} from '@chakra-ui/react'
+import AI from "./Pages/AI";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -53,6 +54,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/programs" element={<Pricing />} />
+        <Route path="/ai" element={<AI/>} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/pay" element={<Pay />} />

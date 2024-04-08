@@ -77,7 +77,7 @@ export const SecondaryButton = ({ to = "#", Text, handleClick }) => {
   return (
     <Link to={to} onClick={handleClick} >
       <StyledSecondaryButton>
-        <h4>{Text}</h4>
+        <p>{Text}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
