@@ -15,7 +15,6 @@ const ScrollToElement = () => {
                 document.getElementById(lastHash.current)?.scrollIntoView({behavior: 'smooth', block : "start"})
             },100)
             lastHash.current = '';
-            return null;
         }
     },[location])
 }

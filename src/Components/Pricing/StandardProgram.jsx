@@ -42,7 +42,7 @@ const StandardProgram = () => {
           <SwiperSlide>
             <Flex mdgap="5.9rem" display="block" mdalign="stretch">
               <div className="program">
-                <div className="heading">
+                <div className="heading" id="online">
                   <H4 mdfs="2.3vw" fw="700">
                     Online Training
                   </H4>
@@ -151,7 +151,7 @@ const StandardProgram = () => {
           <SwiperSlide>
             <Flex mdgap="5.9rem" display="block" mdalign="stretch">
               <div className="program">
-                <div className="heading">
+                <div className="heading" id="onsite">
                   <H4 mdfs="2.3vw" fw="700">
                     On-site Training
                   </H4>

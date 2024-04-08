@@ -1,4 +1,4 @@
-import {useState } from "react"
+import {useState, useEffect, useRef } from "react"
 import { FramerSidebar, FramerSidebarPanel, SideBarBabies, StyledHeader, Toggleview, TopNavbabies } from "../Utils/styled/header/header.styled";
 import enoverLogo from '../assets/enovLogo.png'
 import { GiHamburgerMenu as MenuIcon } from "react-icons/gi";
@@ -8,8 +8,26 @@ import { MdClose as CloseIcon } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { PrimaryButton } from "../Utils/styled/Buttons";
 import caret from "../assets/icon/caret.svg"
+import { HashLink } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
 
 const Header = ()=> {
+  const location = useLocation()
+  const lastHash = useRef('')
+
+    useEffect(()=>{
+        console.log(location)
+        if(location.hash){
+            lastHash.current = location.hash.slice(1)
+        }
+        if(lastHash.current && document.getElementById(lastHash.current)){
+            setTimeout(()=>{
+                document.getElementById(lastHash.current)?.scrollIntoView({behavior: 'smooth', block : "start"})
+            },100)
+            lastHash.current = '';
+        }
+    },[location])
+
   const [isOpen, setIsOpen] = useState(false)
   const ref = useClickAway(() => {
     setIsOpen(false);
@@ -33,7 +51,7 @@ const Header = ()=> {
             Standard
           </header>
           <main>
-          {standard.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          {standard.map((links)=> <MenuItems2  link={links.linkto}>{links.linkName}</MenuItems2>)}
           </main>
           <header>
             Advanced
@@ -72,7 +90,7 @@ const Header = ()=> {
             Standard
           </header>
           <main>
-          {standard.map((links)=> <MenuItems link={links.linkto}>{links.linkName}</MenuItems>)}
+          {standard.map((links)=> <MenuItems2 link={links.linkto}>{links.linkName}</MenuItems2>)}
           </main>
           <header>
             Advanced
@@ -115,8 +133,14 @@ const MenuItems = ({link,children, onClick})=>{
   }}}>
     {children}
   </NavLink>)
-
 }
+
+const MenuItems2 = ({link,children})=>{
+  return(<HashLink to={link} >
+    {children}
+  </HashLink>)
+}
+
 
 const MenuToggle = ({tog, open})=>{
   return(<Toggleview onClick={tog}>
@@ -127,11 +151,11 @@ const MenuToggle = ({tog, open})=>{
 const standard = [
   {
     linkName : 'Online Product Management',
-    linkto : '/program#online',
+    linkto : '/programs#online',
   },
   {
     linkName : 'Onsite Product Management',
-    linkto : '/program#onsite',
+    linkto : '/programs#onsite',
   },
 ]
 

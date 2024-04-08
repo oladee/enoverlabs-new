@@ -44,7 +44,7 @@ export const StyledHeroBody = styled.div`
   position: relative;
   .heroImg{
     width: 100%;
-    height: 28.03vw;
+    height: clamp(200px,25vw,300px) ;
   }
   .text{
     position: absolute;

@@ -73,7 +73,10 @@ const EnoverSpecial = () => {
             </Thirdcard>
             <Fourthcard>
                 <H3 mdfs="2.116vw" fs="1.8rem">Internship Placement</H3>
+
+                <footer>
                 <TertiaryButton Text="Learn More"/>
+                </footer>
             </Fourthcard>
           </Flex>
         </main>
@@ -153,7 +156,7 @@ width: 50%;
     width: 100%;
   }
   footer {
-    padding: 1.2rem 0rem;
+    padding: 2rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,6 +185,9 @@ const Thirdcard = styled(Card)`
 const Fourthcard = styled(Card)`
   width: 50%;
   padding: 12.8rem 0rem 3rem 2.1rem;
+  footer {
+    padding: 2rem 0rem;
+  }
   @media (min-width: 1024px) {
     padding: 14.1rem 5.1rem 2.4rem 2.4rem;
     width:60%;
