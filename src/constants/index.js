@@ -57,7 +57,7 @@ export const advancedPrograms = [
   },
   {
     img: ad3,
-    headText: "Growth Product Management",
+    headText: "AI Product Management",
     subText: "Upskill class for PMs",
   },
 ];

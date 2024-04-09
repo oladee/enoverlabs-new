@@ -2,6 +2,7 @@ import styled from "styled-components";
 import ailine from "../../assets/icon/ailines.svg";
 import { H2, H4 } from "../../Utils/styled/Typograpyhy";
 import { SecondaryButton } from "../../Utils/styled/Buttons";
+
 const Aiprogram = () => {
   return (
     <StyledAiprogram>

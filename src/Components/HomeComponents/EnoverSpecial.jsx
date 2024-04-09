@@ -156,7 +156,7 @@ width: 50%;
     width: 100%;
   }
   footer {
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +166,7 @@ width: 50%;
       padding: 1.8rem 5.7rem 6.1rem 2.4rem;
     }
     footer {
-      padding: 1.9rem 0rem 0 0;
+      padding: 5rem 0rem 0 0;
       display: flex;
       align-items: center;
       justify-content: center;

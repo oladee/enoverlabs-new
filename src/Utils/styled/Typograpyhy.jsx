@@ -68,6 +68,7 @@ export const H3 = styled.h3`
     padding-top: ${(props) => props.mdpt || "0"};
     line-height: ${(props) => props.mdlh};
     padding-bottom: ${(props) => props.mdpb || "0"};
+    margin-bottom: ${(props) => props.mdmb || "0"};
     width: ${(props) => props.mdwidth};
   }
 `;

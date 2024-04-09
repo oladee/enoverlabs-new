@@ -28,13 +28,30 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
     fill: #00f;
   }
   @media (min-width: 1024px) {
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+
+    h5{
+      text-align: center;
+      /* transition: text-align .5s ease; */
+    }
     svg {
       width: 0;
-      transition: width .5s ease;
+      transition: all .5s ease;
     }
-    &:hover svg{
-        width: 2.5rem;
-        fill: #00f;
+    transition: all .5s ease;
+    &:hover {
+      background: #00F;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 255, 0.50);
+      color: #fff;
+      svg{
+        width: 2.4rem;
+        fill: #fff;
+    }
+    }
+    &:hover p, &:hover h5 {
+      text-align: left;
     }
   }
 `;
@@ -43,7 +60,7 @@ export const PrimaryButton = ({ to = "#", Text, handleClick }) => {
   return (
     <Link to={to} onClick={handleClick}>
       <StyledPrimaryButton>
-        <h4>{Text}</h4>
+        <p>{Text}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -64,29 +81,32 @@ export const StyledSecondaryButton = styled(StyledPrimaryButton)`
         fill: #fff;
       }
   @media (min-width: 1024px) {
+    width:${(props)=> props.w || "17rem"};
     &:hover {
       svg {
-        display: block;
         fill: #fff;
       }
     }
   }
 `;
 
-export const SecondaryButton = ({ to = "#", Text, handleClick }) => {
+export const SecondaryButton = ({ to = "#", Text, handleClick, w, arrowDown}) => {
   return (
     <Link to={to} onClick={handleClick} >
-      <StyledSecondaryButton>
-        <p>{Text}</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          className="bb"
-        >
-          <path d="M15.8691 17.6567L14.4581 16.2388L17.7281 12.9838L4.12306 12.9707L4.12506 10.9707L17.6931 10.9838L14.4781 7.75375L15.8951 6.34375L21.5391 12.0138L15.8691 17.6567Z" />
-        </svg>
+      <StyledSecondaryButton w={w} >
+        <h5>{Text}</h5>
+        {
+          arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M6.34325 15.037L7.76125 13.626L11.0162 16.896L11.0293 3.29103L13.0293 3.29303L13.0162 16.861L16.2462 13.646L17.6562 15.063L11.9862 20.707L6.34325 15.037Z"/>
+        </svg> : <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="24"
+        viewBox="0 0 25 24"
+      >
+        <path d="M15.8691 17.6567L14.4581 16.2388L17.7281 12.9838L4.12306 12.9707L4.12506 10.9707L17.6931 10.9838L14.4781 7.75375L15.8951 6.34375L21.5391 12.0138L15.8691 17.6567Z" />
+      </svg>
+        }
       </StyledSecondaryButton>
     </Link>
   );
@@ -102,9 +122,10 @@ const StyledTertiaryButton = styled(StyledPrimaryButton)`
   svg {
     fill: #00f;
   }
-  transition: 1s ease;
   @media (min-width: 1024px) {
     &:hover {
+    background: #ffF;
+    color: #00f;
       svg {
         display: block;
         fill: #00f;

@@ -3,25 +3,27 @@ import { H2, H4, P } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
 import { Link } from 'react-router-dom'
 import { OnsiteProgram } from '../../constants'
+import weeks12 from "../../assets/icon/weeks12.svg"
 import styled from 'styled-components';
 import check from "../../assets/icon/check.svg"
 
 const ProgramDetails = () => {
   return (
     <StyledProgramDetail>
-    <Flex mdgap="5.9rem" display="block" mdalign="stretch">
+    <Flex mdgap="5.9rem" display="block" mdalign="stretch" >
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.3vw" fw="700">
-                    On-site Training
+                  <H4 mdfs="2.38vw" fw="700">
+                  AI Product Management <br /> Program
                   </H4>
-                  <img src="" alt="12 weeks" />
+                  <img src={weeks12} alt="12 weeks" />
                 </div>
                 <div className="cover2">
                   <main>
                     <div className="item">
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                      <div className='item1'>
+                       <div >
+                       <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
@@ -32,33 +34,9 @@ const ProgramDetails = () => {
                         >
                           Every Saturday
                         </H2>
-                      </div>
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
-                          Duration
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.27vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          12 weeks training
-                        </H2>
-                        <H2
-                          mdfs="1.45vw"
-                          fs="3.27vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          {" "}
-                          8 weeks internship
-                        </H2>
-                      </div>
-                    </div>
-                    <div className="item item2">
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                       </div>
+                       <div>
+                       <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
@@ -69,8 +47,47 @@ const ProgramDetails = () => {
                         >
                           10am - 1pm
                         </H2>
+                       </div>
                       </div>
-                      <div>
+                      <div className="item2">
+                        <div>
+                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                          Location
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.27vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          Roc Workspace, Gate view Plaza, Plot 11, Admiralty way, Lekki Phase 1
+                        </H2>
+                        </div>
+                      </div>
+                      <div className='item3'>
+                        <div>
+                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                          Duration
+                        </H4>
+                        <H2
+                          mdfs="1.587vw"
+                          fs="3.27vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          6 weeks training
+                        </H2>
+                        <H2
+                          mdfs="1.45vw"
+                          fs="3.27vw"
+                          fw="600"
+                          color="var(--Body-Text)"
+                        >
+                          {" "}
+                          6 weeks internship
+                        </H2>
+                        </div>
+                        <div>
                         <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
@@ -82,6 +99,7 @@ const ProgramDetails = () => {
                         >
                           ₦300,000
                         </H2>
+                      </div>
                       </div>
                     </div>
                   </main>
@@ -124,12 +142,12 @@ const ProgramDetails = () => {
 export default ProgramDetails
 
 const StyledProgramDetail = styled.div`
-    padding: 33px 15px 3.2rem 15px;
+    padding: 33px 20px 3.2rem 15px;
   .program {
     position: relative;
     width: 100%;
     img {
-      width: 14rem;
+      width: clamp(100px, 32vw, 140px);
       position: absolute;
       right: -5px;
     }
@@ -146,21 +164,24 @@ const StyledProgramDetail = styled.div`
     padding: 4.4rem 0 2rem 0;
     padding-left: 3.5rem;
   }
-  main {
+  .item{
     display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  .item1,.item2, .item3 {
+    display: flex;
+  }
+  .item1{
+    gap:21.164vw;
+  }
+  .item3{
+    gap: 19.841vw;
   }
   .list {
     display: flex;
     flex-direction: column;
     gap: 26px;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .item2 {
-    padding-left: 26.86vw;
   }
   .cta {
     display: flex;
@@ -182,6 +203,7 @@ const StyledProgramDetail = styled.div`
       width: 62.79vw;
       img {
         position: absolute;
+        width: 12.65vw;
         right: -13px;
       }
     }
@@ -195,21 +217,18 @@ const StyledProgramDetail = styled.div`
       align-items: center;
       gap: 14.48vw;
     }
+    .item{
+    gap: 65px;
+  }
     .list {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 32px;
     }
     .cover2 {
       width: 100%;
       padding: 7.2rem 0 7rem 0;
       padding-left: 9.6rem;
-    }
-    .item {
-      gap: 7.2rem;
-    }
-    .item2 {
-      padding-left: 15.01vw;
     }
     .cta {
       padding-top: 6.1rem;

@@ -18,7 +18,7 @@ import pathline from "../../assets/icon/pathLine.png";
 const ProductSection = () => {
   return (
     <StyledProductSection>
-      <header>
+      <header id="programs">
         <H2
           color="var(--Title-Text)"
           pb="6.4rem"
