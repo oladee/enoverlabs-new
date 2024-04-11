@@ -52,12 +52,12 @@ const StandardProgram = () => {
                   <main>
                     <div className="item">
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -65,12 +65,12 @@ const StandardProgram = () => {
                         </H2>
                       </div>
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           Duration
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -78,7 +78,7 @@ const StandardProgram = () => {
                         </H2>
                         <H2
                           mdfs="1.45vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -89,12 +89,12 @@ const StandardProgram = () => {
                     </div>
                     <div className="item item2">
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -102,12 +102,12 @@ const StandardProgram = () => {
                         </H2>
                       </div>
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -139,7 +139,7 @@ const StandardProgram = () => {
                   {onlineProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.27vw" mdfs="1.33vw" color="var(--Body-Text)">
+                      <P fs="3.3vw" mdfs="1.33vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>
@@ -161,12 +161,12 @@ const StandardProgram = () => {
                   <main>
                     <div className="item">
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -174,12 +174,12 @@ const StandardProgram = () => {
                         </H2>
                       </div>
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           Duration
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -187,7 +187,7 @@ const StandardProgram = () => {
                         </H2>
                         <H2
                           mdfs="1.45vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -198,12 +198,12 @@ const StandardProgram = () => {
                     </div>
                     <div className="item item2">
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -211,12 +211,12 @@ const StandardProgram = () => {
                         </H2>
                       </div>
                       <div>
-                        <H4 mdfs="1.058vw" fs="2.8vw" color="var(--Body-Text)">
+                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.27vw"
+                          fs="3.3vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
@@ -248,7 +248,7 @@ const StandardProgram = () => {
                   {OnsiteProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
-                      <P fs="3.27vw" mdfs="1.23vw" color="var(--Body-Text)">
+                      <P fs="3.3vw" mdfs="1.23vw" color="var(--Body-Text)">
                         {pg}
                       </P>
                     </Flex>

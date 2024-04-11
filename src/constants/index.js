@@ -48,17 +48,17 @@ export const advancedPrograms = [
   {
     img: ad1,
     headText: "Technical Product Management",
-    subText: "Upskill class for PMs",
+    subText: "For Experienced PMs",
   },
   {
     img: ad2,
     headText: "Growth Product Management",
-    subText: "Upskill class for PMs",
+    subText: "For Experienced PMs",
   },
   {
     img: ad3,
     headText: "AI Product Management",
-    subText: "Upskill class for PMs",
+    subText: "For Product Leaders",
   },
 ];
 
@@ -184,4 +184,35 @@ export const FaqContent = [
 
 export const partners = [
   microvest, elite, microsoft, ulo, perxels
+]
+
+export const benefits1 = [
+  {
+    title : "Data Driven Insights",
+    details : "Product managers can leverage these insights to make informed decisions and prioritize features based on data rather than intuition"
+  },
+  {
+    title : "Personalization",
+    details : "Product managers can use AI-powered recommendation engines to deliver tailored content and recommendations, increasing user engagement and satisfaction."
+  },
+  {
+    title : "Automation",
+    details : "Automation can streamline workflows, reduce manual errors, and increase efficiency, ultimately accelerating product development and time-to-market."
+  },
+
+]
+
+export const benefit2 = [
+  {
+    title : "Predictive Analytics",
+    details : "Predictive analytics can help identify potential issues before they arise, enabling proactive decision-making and risk mitigation"
+  },
+  {
+    title : "Optimized Resource Allocation",
+    details : "Product managers can use AI-driven insights to allocate resources more effectively, ensuring that projects are delivered on time and within budget."
+  },
+  {
+    title : "Continuous Improvement",
+    details : "By continuously monitoring user feedback and behavior, product managers can identify areas for improvement and implement changes to enhance the user experience."
+  },
 ]

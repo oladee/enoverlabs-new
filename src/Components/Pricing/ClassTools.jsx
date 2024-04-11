@@ -69,11 +69,11 @@ const ToolsStyle = styled.div`
             flex-direction: column;
             align-items: flex-start;
             h1 {
-                font-size: 5.60vw;
+                font-size: 5.70vw;
                 font-weight: 700;
             }
             p{
-                font-size: 3.27vw;
+                font-size: 3.32vw;
                 font-weight: 400;
                 line-height: 24px;
                 color: #000;
@@ -116,7 +116,7 @@ const ToolsStyle = styled.div`
                     width: 4.67vw;
                 }
                 p {
-                    font-size: 2.803vw;
+                    font-size: 2.903vw;
                     font-weight: 400;
                 }
 
