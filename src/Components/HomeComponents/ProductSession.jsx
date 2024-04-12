@@ -8,7 +8,7 @@ import { SecondaryButton } from "../../Utils/styled/Buttons";
 const ProductSession = () => {
   return (
     <div>
-      <Tape>Product Session</Tape>
+      <Tape>Free Product Session</Tape>
       <MainContent>
         <Content>
           <StyledSpeakerDetails>

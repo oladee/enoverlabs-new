@@ -29,18 +29,27 @@ import elite from "../assets/icon/ELITE DIGEST-01 1.png"
 import microsoft from "../assets/icon/microsoft.svg";
 import ulo from "../assets/icon/ulospaces.svg";
 import perxels from "../assets/icon/perxels.svg";
-
+import ibrahim from "../assets/Alumni/Ibrahim.png"
+import jennifer from "../assets/Alumni/Jennifer.png"
+import damola from "../assets/Alumni/Damola.png"
+import funmilola from "../assets/Alumni/Funmilayo.png"
+import abiola from "../assets/Alumni/Abiola.png"
+import akeredolu from "../assets/Alumni/Akeredolu.png"
+import matthew from "../assets/Alumni/Matthew.png"
+import precious from "../assets/Alumni/Precious.png"
+import adeoluwa from "../assets/Alumni/Adeoluwa.png"
+import apalowo from "../assets/Alumni/Apalowo.png"
 
 export const standardPrograms = [
   {
     img: sp1,
     headText: "Online Product Management",
-    subText: "Standard class for all students",
+    subText: "For Newbies in product ",
   },
   {
     img: sp2,
     headText: "On-Site Product Management",
-    subText: "Standard class for all students",
+    subText: "For Newbies in product ",
   },
 ];
 
@@ -66,12 +75,12 @@ export const internationalPrograms = [
   {
     img: ip1,
     headText: "Diaspora PM Program",
-    subText: "Class for all students in the Diaspora",
+    subText: "For Africans in diaspora",
   },
   {
     img: ip2,
     headText: "Kenya PM Program",
-    subText: "Standard class for all students",
+    subText: "For Newbies in Kenya",
   },
 ];
 
@@ -215,4 +224,8 @@ export const benefit2 = [
     title : "Continuous Improvement",
     details : "By continuously monitoring user feedback and behavior, product managers can identify areas for improvement and implement changes to enhance the user experience."
   },
+]
+
+export const alumni = [
+  ibrahim,jennifer,damola,funmilola,abiola,akeredolu,matthew,precious,adeoluwa,apalowo
 ]

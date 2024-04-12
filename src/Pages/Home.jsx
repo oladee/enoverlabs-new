@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '../Components/HomeComponents/Hero'
 import Testimonials from '../Components/HomeComponents/Testimonials'
-import Sessions from '../Components/HomeComponents/Sessions'
 import Started from '../Components/HomeComponents/Started'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
@@ -10,6 +9,7 @@ import ProductSection from '../Components/HomeComponents/ProductSection'
 import EnoverSpecial from '../Components/HomeComponents/EnoverSpecial'
 import SuccessStories from '../Components/HomeComponents/SuccessStories'
 import Partners from '../Components/HomeComponents/Partners'
+import Alumni from '../Components/HomeComponents/Alumni'
 // import styled from 'styled-components'
 // import { theme } from '../Utils/Theme'
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
         <Partners/>
         <Testimonials/>
         <SuccessStories/>
-        <Sessions/>
+        <Alumni/>
         <Started/>
         <Footer p="5rem 9.6rem 0 9.6rem"/>
     </div>

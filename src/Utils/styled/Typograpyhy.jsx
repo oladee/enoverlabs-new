@@ -39,6 +39,7 @@ export const H2 = styled.h2`
   padding-bottom: ${(props) => props.pb || "0"};
   @media (min-width: 1024px) {
     font-size: ${(props) => props.mdfs || "2.380vw"};
+    text-align: ${(props) => props.mdtA};
     line-height: ${(props) => props.mdlh || "normal"};
     width: ${(props) => props.mdwidth};
     color: ${(props) => props.mdcolor || props.color};
@@ -90,6 +91,7 @@ export const H4 = styled.h4`
   }
   @media (min-width: 1024px) {
     font-size: ${(props) => props.mdfs || "1.322vw"};
+    text-align: ${(props) => props.mdtA};
     line-height: ${(props) => props.mdlh || props.lh};
     padding-bottom: ${(props) => props.mdpb || "0"};
     padding-top: ${(props) => props.mdpt || "0"};

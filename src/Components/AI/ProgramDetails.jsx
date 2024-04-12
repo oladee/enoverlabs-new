@@ -14,7 +14,7 @@ const ProgramDetails = () => {
               <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.38vw" fw="700">
-                  AI Product Management <br /> Program
+                  AI Product Management <br /> Training
                   </H4>
                   <img src={weeks12} alt="12 weeks" />
                 </div>
@@ -60,7 +60,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Roc Workspace, Gate view Plaza, Plot 11, Admiralty way, Lekki Phase 1
+                          Lekki, Lagos, Nigeria
                         </H2>
                         </div>
                       </div>
@@ -75,16 +75,7 @@ const ProgramDetails = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          6 weeks training
-                        </H2>
-                        <H2
-                          mdfs="1.45vw"
-                          fs="3.27vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          {" "}
-                          6 weeks internship
+                          4 weeks training
                         </H2>
                         </div>
                         <div>
