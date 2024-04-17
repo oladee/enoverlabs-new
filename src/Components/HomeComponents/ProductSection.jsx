@@ -61,7 +61,7 @@ const ProductSection = () => {
           className="swipe"
         >
           <SwiperSlide className="sp">
-            <H3 color="#333" fs="1.8rem" pt="4.8rem" mdfs="2.8rem">
+            <H3 color="#333" fs="1.8rem" mb="1rem" mdmb="1rem" pt="4.8rem"  mdfs="2.8rem">
               Standard Programs
             </H3>
             <Flex wrap="wrap" gap="15px" justify="center">
@@ -144,7 +144,7 @@ const StyledProductSection = styled.div`
   }
   @media (min-width: 1024px) {
     padding: 12.1rem 9.6rem;
-    background-size: 15%;
+    background-size: 10%;
     header {
       display: flex;
       justify-content: center;

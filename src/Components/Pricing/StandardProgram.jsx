@@ -50,69 +50,60 @@ const StandardProgram = () => {
                 </div>
                 <div className="cover">
                   <main>
-                    <div className="item">
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
+                  <div className="item">
+                      <div className='item1'>
+                       <div >
+                       <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           Training day
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.3vw"
+                          fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           Every Saturday
                         </H2>
-                      </div>
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
-                          Duration
-                        </H4>
-                        <H2
-                          mdfs="1.587vw"
-                          fs="3.3vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          12 weeks training
-                        </H2>
-                        <H2
-                          mdfs="1.45vw"
-                          fs="3.3vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          {" "}
-                          8 weeks internship
-                        </H2>
-                      </div>
-                    </div>
-                    <div className="item item2">
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
+                       </div>
+                       <div>
+                       <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           Class Times
                         </H4>
                         <H2
                           mdfs="1.58vw"
-                          fs="3.3vw"
+                          fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           10am - 1pm
                         </H2>
+                       </div>
                       </div>
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
+                      <div className='item3'>
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                          Duration
+                        </H4>
+                        <H2 mdfs="1.587vw" mb="1rem" fs="3.27vw" fw="600" color="var(--Body-Text)">
+                          12 weeks training
+                        </H2>
+                        <H2 mdfs="1.587vw" fs="3.27vw" fw="600" color="var(--Body-Text)">
+                          8 weeks training
+                        </H2>
+                        </div>
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.3vw"
+                          fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦200,000
+                          ₦300,000
                         </H2>
+                      </div>
                       </div>
                     </div>
                   </main>
@@ -125,17 +116,10 @@ const StandardProgram = () => {
                 </div>
               </div>
               <div className="breakdown">
-                <H4
-                  mdfs="1.58vw"
-                  fw="700"
-                  pt="25px"
-                  pb="25px"
-                  mdpb="28px"
-                  color="var(--Body-Text)"
-                >
+                <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
                   Training Details
                 </H4>
-                <div className="list">
+                <div className="list2">
                   {onlineProgram.map((pg) => (
                     <Flex gap="10px">
                       <img src={check} alt="checkMark" />
@@ -152,76 +136,74 @@ const StandardProgram = () => {
             <Flex mdgap="5.9rem" display="block" mdalign="stretch">
               <div className="program">
                 <div className="heading" id="onsite">
-                  <H4 mdfs="2.3vw" fw="700">
+                  <H4 mdfs="2.3vw" fw="700" >
                     On-site Training
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
                 <div className="cover2">
                   <main>
-                    <div className="item">
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
+                  <div className="item">
+                      <div className='item1'>
+                       <div>
+                       <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           Training day
+                        </H4>
+                        <H2 mdfs="1.587vw" fs="3.27vw" fw="600" color="var(--Body-Text)">
+                          Every Saturday
+                        </H2>
+                       </div>
+                       <div>
+                       <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                          Class Times
+                        </H4>
+                        <H2 mdfs="1.58vw" fs="3.27vw" fw="600" color="var(--Body-Text)">
+                          10am - 1pm
+                        </H2>
+                       </div>
+                      </div>
+                      <div className="item2">
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
+                          Location
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.3vw"
+                          fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Every Saturday
+                          Lekki, Lagos, Nigeria
                         </H2>
+                        </div>
                       </div>
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
+                      <div className='item3'>
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           Duration
                         </H4>
                         <H2
                           mdfs="1.587vw"
-                          fs="3.3vw"
+                          fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          12 weeks training
+                          4 weeks training
                         </H2>
-                        <H2
-                          mdfs="1.45vw"
-                          fs="3.3vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          {" "}
-                          8 weeks internship
-                        </H2>
-                      </div>
-                    </div>
-                    <div className="item item2">
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
-                          Class Times
-                        </H4>
-                        <H2
-                          mdfs="1.58vw"
-                          fs="3.3vw"
-                          fw="600"
-                          color="var(--Body-Text)"
-                        >
-                          10am - 1pm
-                        </H2>
-                      </div>
-                      <div>
-                        <H4 mdfs="1.058vw" fs="2.9vw" color="var(--Body-Text)">
+                        </div>
+                        <div>
+                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           TUITION FEES
                         </H4>
                         <H2
                           mdfs="2.38vw"
-                          fs="3.3vw"
+                          fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
                           ₦300,000
                         </H2>
+                      </div>
                       </div>
                     </div>
                   </main>
@@ -277,7 +259,7 @@ const StyledProgram = styled.div`
     position: relative;
     width: 100%;
     img {
-      width: 14rem;
+      width: 32.71vw;
       position: absolute;
       right: -5px;
     }
@@ -307,13 +289,24 @@ const StyledProgram = styled.div`
     flex-direction: column;
     gap: 26px;
   }
-  .item {
+  .item{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 34px;
   }
-  .item2 {
-    padding-left: 26.86vw;
+  .item1,.item2, .item3 {
+    display: flex;
+  }
+  .item1{
+    gap:21.164vw;
+  }
+  .item3{
+    gap: 19.841vw;
+  }
+  .list, .list2{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
   }
   .cta {
     display: flex;
@@ -371,6 +364,7 @@ const StyledProgram = styled.div`
       width: 62.79vw;
       img {
         position: absolute;
+        width: 12.66vw;
         right: -13px;
       }
     }
@@ -384,10 +378,13 @@ const StyledProgram = styled.div`
       align-items: center;
       gap: 14.48vw;
     }
-    .list {
+    .list, .list2{
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 25px;
+    }
+    .list2{
+      gap: 18px;
     }
     .cover {
       width: 100%;
@@ -399,18 +396,21 @@ const StyledProgram = styled.div`
       padding: 7.2rem 0 7rem 0;
       padding-left: 9.6rem;
     }
-    .item {
-      gap: 7.2rem;
-    }
-    .item2 {
-      padding-left: 15.01vw;
-    }
+    .item{
+    gap: 65px;
+  }
+  .item1{
+    gap:17.164vw;
+  }
+  .item3{
+    gap: 15.841vw;
+  }
     .cta {
       padding-top: 6.1rem;
       justify-content: flex-start;
       .syll {
         display: block;
-        padding-left: 17.01vw;
+        padding-left: 16.01vw;
         color: #175afe;
         font-size: 20px;
       }

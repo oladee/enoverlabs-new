@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const StyledHeader = styled.header`
+  background-color: ${props => props.bg};
   display: flex;
   position: relative;
   justify-content: space-between;

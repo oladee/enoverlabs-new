@@ -11,7 +11,7 @@ import Explore from '../Components/Pricing/Explore'
 import { FaqSection } from '../Components/Pricing/FaqSection'
 const Pricing = () => {
   return (<div>
-    <Header/>
+    <Header bg="#FFFDF7"/>
     <StyledPricing>
         <PriceHero/>
         <StandardProgram/>

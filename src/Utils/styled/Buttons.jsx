@@ -1,10 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { theme } from "../Theme";
 import Arrow from "../../assets/icon/arrow-right.svg";
 import WhiteArrow from "../../assets/ArrowWhite.png";
 import { Link } from "react-router-dom";
 
 const color = theme.color;
+
+export const breathing = keyframes`
+  to{
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 255, 0.50);
+    gap: 12px;
+  }
+`
 
 export const StyledNewButton = styled.button`
   padding: ${theme.fontSize.x} ${theme.fontSize.base};
@@ -23,6 +30,7 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
   display: flex;
   align-items: center;
   gap: 5px;
+  animation: ${breathing} 1.5s ease-in-out infinite;
   svg {
     width: 2.4rem;
     fill: #00f;
@@ -31,7 +39,7 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
     width: 17rem;
     display: flex;
     justify-content: center;
-
+    animation: initial;
     h5{
       text-align: center;
       /* transition: text-align .5s ease; */
@@ -164,13 +172,13 @@ color:#fff;
 border: none;
 gap: 5px;
 margin-top: ${props => props.m};
-
 svg {
   fill: #fff;
 }
-transition: 1s ease;
 @media (min-width: 1024px) {
   &:hover {
+    background: #000;
+    color: #fff;
     svg {
       display: block;
       fill: #fff;

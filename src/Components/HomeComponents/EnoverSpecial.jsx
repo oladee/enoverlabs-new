@@ -186,7 +186,7 @@ const Fourthcard = styled(Card)`
   width: 50%;
   padding: 12.8rem 0rem 3rem 2.1rem;
   footer {
-    padding: 2rem 0rem;
+    padding: 2rem 0.2rem;
   }
   @media (min-width: 1024px) {
     padding: 14.1rem 5.1rem 2.4rem 2.4rem;

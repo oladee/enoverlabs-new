@@ -43,7 +43,7 @@ export const H2 = styled.h2`
     line-height: ${(props) => props.mdlh || "normal"};
     width: ${(props) => props.mdwidth};
     color: ${(props) => props.mdcolor || props.color};
-    margin-bottom: ${(props) => props.mdmb || "0"};
+    margin-bottom: ${(props) => props.mdmb || props.mb};
     padding-bottom: ${(props) => props.pmdb || "0"};
   }
 `;
@@ -83,6 +83,7 @@ export const H4 = styled.h4`
   text-align: ${(props) => props.tA};
   line-height: ${(props) => props.lh || "normal"};
   margin: ${(props) => props.margin || "0"};
+  margin-bottom: ${(props) => props.mb || "0"};
   padding: ${(props) => props.p || "0"};
   padding-top: ${(props) => props.pt || "0"};
   padding-bottom: ${(props) => props.pb || "0"};

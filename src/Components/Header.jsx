@@ -11,7 +11,7 @@ import caret from "../assets/icon/caret.svg"
 import { HashLink } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 
-const Header = ()=> {
+const Header = ({bg})=> {
   const location = useLocation()
   const lastHash = useRef('')
 
@@ -38,7 +38,7 @@ const Header = ()=> {
   const handleLinks = ()=> setAddLinks(!addlinks)
 
   const toggle = ()=> setIsOpen(!isOpen)
-  return(<StyledHeader>
+  return(<StyledHeader bg={bg}>
     <NavLink to="/">
     <img src={enoverLogo} alt="EnoverLab Logo"/>
     </NavLink>
