@@ -9,6 +9,8 @@ import StandardProgram from '../Components/Pricing/StandardProgram'
 import { ClassTools } from '../Components/Pricing/ClassTools'
 import Explore from '../Components/Pricing/Explore'
 import { FaqSection } from '../Components/Pricing/FaqSection'
+import StandardOptions from '../Components/Pricing/StandardOptions'
+import Testimonials from '../Components/Pricing/Testi'
 const Pricing = () => {
   return (<div>
     <Header bg="#FFFDF7"/>
@@ -16,7 +18,9 @@ const Pricing = () => {
         <PriceHero/>
         <StandardProgram/>
         <ClassTools/>
+        <StandardOptions/>
         <Explore/>
+        <Testimonials/>
         <Testimonies/>
         <FaqSection/>
     </StyledPricing>
@@ -29,6 +33,6 @@ export default Pricing
 const StyledPricing = styled.div`
   background: #FFFDF7;
     @media (min-width: 1024px) {
-      padding: 0 9.6rem;
+      /* padding: 0 9.6rem; */
     }
 `

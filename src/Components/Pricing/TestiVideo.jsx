@@ -9,21 +9,21 @@ import TestiCard from "./TestiCard";
 const TestiData = [
   {
     imgLink: testiImage1,
-    name: " Olanrewaju ",
+    name: " Shalom",
     role: "Product Manager",
-    vidUrl: "https://youtube.com/embed/us8fdyMho3I",
+    vidUrl: "https://www.youtube.com/embed/jXR2CYoci_4",
   },
   {
     imgLink: testiImage2,
-    name: " Olabanji ",
+    name: " Adebola ",
     role: "Lead Product Manager",
-    vidUrl: "https://youtube.com/embed/5rrt0YLjiTQ",
+    vidUrl: "https://www.youtube.com/embed/CnlDAo2EHVU",
   },
   {
     imgLink: testiImage3,
-    name: "Happiness",
+    name: "Chinelo",
     role: "Product Manager",
-    vidUrl: "https://youtube.com/embed/VA75Hhf1WcM",
+    vidUrl: "https://www.youtube.com/embed/iPMxwnmj7sk",
   },
 ];
 

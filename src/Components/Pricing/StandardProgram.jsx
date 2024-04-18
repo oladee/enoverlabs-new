@@ -9,10 +9,71 @@ import { H2, H4, P } from "../../Utils/styled/Typograpyhy";
 import weeks20 from "../../assets/icon/20weeks.png";
 import { OnsiteProgram, onlineProgram } from "../../constants";
 import check from "../../assets/icon/check.svg";
-import { SecondaryButton } from "../../Utils/styled/Buttons";
+import { SubmitButton } from "../../Utils/styled/Buttons";
 import { Link } from "react-router-dom";
+import {useState, useEffect} from "react";
 
 const StandardProgram = () => {
+  const [location, setLocation] = useState('')
+  const [isError,setIsError] = useState(false)
+  const [trainingLocation, setTrainingLocation] = useState({location : "Select Location to see address", tuition : '300,000', link : ''})
+  useEffect(()=>{
+    switch(location){
+      case "Lekki":
+        setTrainingLocation({
+          location : 'Lekki Gateview Plaza, Admiralty way, Lekki Phase 1',
+          tuition : '300,000',
+          link : 'https://paystack.com/pay/EnoverlabLekki'
+        })
+        break;
+      case "Ibadan":
+        setTrainingLocation({
+          location : 'Cafe One, Palms Mall, Ring Road, Ibadan',
+          tuition : '250,000',
+          link :  "https://paystack.com/pay/enoverlabibadan"
+        })
+        break;
+      case "Abuja":
+        setTrainingLocation({
+          location : '22 Kumasi Cres, Wuse 2, Abuja',
+          tuition : '300,000',
+          link : "https://paystack.com/pay/enoverlababuja"
+        })
+        break;
+        case "Berger":
+          setTrainingLocation({
+            location : '75b Ogunnusi Rd, Isheri, Ojodu Berger, Lagos Berger',
+            tuition : '300,000',
+            link : 'https://paystack.com/pay/enoverlabberger'
+          })
+          break;
+      default:
+        setTrainingLocation({
+          location : 'Select Location to see address',
+          tuition : '300,000',
+          link : ''
+        })
+        break;
+    }
+  },[location])
+  function handleLocationChange(e){
+    setLocation(e.target.value)
+  }
+  function handleSubmit(e){
+    if(!trainingLocation.link){
+      e.preventDefault()
+      setIsError(true)
+      return
+    }
+    setIsError(false)
+  }
+  function handleBlur(){
+    if(!trainingLocation.link){
+      setIsError(true)
+      return
+    }
+    setIsError(false)
+  }
   return (
     <StyledProgram>
       <header>Standard Programs</header>
@@ -48,9 +109,9 @@ const StandardProgram = () => {
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
-                <div className="cover">
+                <form action="https://paystack.com/pay/enoverlabadvance" method="post" target="_blank"  className="cover">
                   <main>
-                  <div className="item">
+                  <div  className="item">
                       <div className='item1'>
                        <div >
                        <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
@@ -108,12 +169,12 @@ const StandardProgram = () => {
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButton Text="Enroll Now" />
+                    <SubmitButton Text="Enroll Now" />
                     <Link to="#" className="syll">
                       Download Syllabus
                     </Link>
                   </div>
-                </div>
+                </form>
               </div>
               <div className="breakdown">
                 <H4 mdfs="1.58vw" fw="700" pt="25px" pb="25px" mdpb="28px" color="var(--Body-Text)">
@@ -134,14 +195,14 @@ const StandardProgram = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Flex mdgap="5.9rem" display="block" mdalign="stretch">
-              <div className="program">
+                <div className="program">
                 <div className="heading" id="onsite">
                   <H4 mdfs="2.3vw" fw="700" >
                     On-site Training
                   </H4>
                   <img src={weeks20} alt="20 weeks" />
                 </div>
-                <div className="cover2">
+                <form action={trainingLocation.link} method="post" target="_blank" onSubmit={handleSubmit} className="cover2">
                   <main>
                   <div className="item">
                       <div className='item1'>
@@ -162,6 +223,17 @@ const StandardProgram = () => {
                         </H2>
                        </div>
                       </div>
+                      <div>
+                      <select title="location" name="locale" id="locale"  value={location} onChange={handleLocationChange} onBlur={handleBlur}>
+                        <option id="item" value="">Select Location</option>
+                        <option value="Lekki">LEKKI</option>
+                        <option value="Ibadan">IBADAN</option>
+                        <option value="Abuja">ABUJA</option>
+                        <option value="Berger">BERGER</option>
+                      </select>
+                      {isError && <p className="err">Please select Your Preferred Location</p>}
+                      </div>
+                      
                       <div className="item2">
                         <div>
                         <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
@@ -173,7 +245,7 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          Lekki, Lagos, Nigeria
+                          {trainingLocation.location}
                         </H2>
                         </div>
                       </div>
@@ -182,13 +254,16 @@ const StandardProgram = () => {
                         <H4 mdfs="1.058vw" mb="1rem" fs="2.8vw" color="var(--Body-Text)">
                           Duration
                         </H4>
+                        <H2 mdfs="1.587vw" mb="1rem" fs="3.27vw" fw="600" color="var(--Body-Text)" >
+                          12 weeks training
+                        </H2>
                         <H2
                           mdfs="1.587vw"
                           fs="3.27vw"
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          4 weeks training
+                          8 weeks Internship
                         </H2>
                         </div>
                         <div>
@@ -201,20 +276,20 @@ const StandardProgram = () => {
                           fw="600"
                           color="var(--Body-Text)"
                         >
-                          ₦300,000
+                          ₦{trainingLocation.tuition}
                         </H2>
                       </div>
                       </div>
                     </div>
                   </main>
                   <div className="cta">
-                    <SecondaryButton Text="Enroll Now" />
+                    <SubmitButton Text="Enroll Now" />
                     <Link to="#" className="syll">
                       Download Syllabus
                     </Link>
                   </div>
+                </form>
                 </div>
-              </div>
               <div className="breakdown">
                 <H4
                   mdfs="1.58vw"
@@ -351,8 +426,30 @@ const StyledProgram = styled.div`
       border-bottom: 4px solid rgba(0, 70, 255, 0.44);
       margin-bottom:4rem;
     }
+  #locale{
+    outline: none;
+    padding: 0.5rem 0;
+    width: 13rem;
+    color: var(--Body-Text);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 2.857px;
+    background-color: inherit;
+    border: 0.714px solid #B0B0B0;
+    cursor: pointer;
+  }
+  option{
+    background-color: #FFFDF7;
+  }
+  .err{
+    color: red;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
   @media (min-width: 1024px) {
-    padding: 110px 0px 0 0;
+    padding: 110px 9.6rem;
     header {
       padding-bottom: 5.6rem;
       color: #0000ff;
@@ -370,6 +467,7 @@ const StyledProgram = styled.div`
     }
     .breakdown{
       width: calc(100vw - 62.79vw);
+      padding-top: 2rem;
     }
     .heading {
       padding: 4rem 0;
@@ -381,7 +479,7 @@ const StyledProgram = styled.div`
     .list, .list2{
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 35px;
     }
     .list2{
       gap: 18px;
@@ -425,6 +523,10 @@ const StyledProgram = styled.div`
     height: 75px;
     }
     }
+    #locale{
+    width: 19rem;
+    font-size: 18px;
+  }
 
   }
 `;

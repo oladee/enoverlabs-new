@@ -86,7 +86,7 @@ export const StyledTestimonies = styled.div`
         position: relative;
         padding: 0 2rem 6.4rem 2rem;
         @media (min-width: 1024px){
-            padding: 0 0 16rem 0;
+            padding: 0 9.6rem 16rem 9.6rem;
         }
         
         .header{

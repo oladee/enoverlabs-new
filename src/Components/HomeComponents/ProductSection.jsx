@@ -136,7 +136,7 @@ const StyledProductSection = styled.div`
   background: url(${lineline});
   background-repeat: no-repeat;
   background-size: 20%;
-  padding: 10.7rem 2.4rem;
+  padding: 6.7rem 2.4rem;
   color: var(--Title-Text) header {
     display: flex;
     justify-content: center;

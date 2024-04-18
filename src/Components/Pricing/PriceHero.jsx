@@ -257,7 +257,7 @@ const StyledSwiper = styled.div`
     width : 23.7vw;
   }
   @media (min-width: 1024px) {
-    padding: 5.4rem 0;
+    padding: 5.4rem 9.6rem;
     h4{
       display: block;
     }
@@ -272,11 +272,14 @@ const StyledPriceHero = styled.div`
   /* margin-bottom: 10%; */
   background-color:#FFFDF7;
   .price-hero-container {
+    padding: 0 9.6rem;
     padding-top:8.2rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     @media (max-width: 768px) {
+      padding: 0;
       padding-top: 4.8rem;
       flex-direction: column;
       align-items: center;
@@ -294,7 +297,6 @@ const StyledPriceHero = styled.div`
         }
       }
       .video-box{
-     
         display: none;
         margin-top: 51px;
         padding-right: 2rem;

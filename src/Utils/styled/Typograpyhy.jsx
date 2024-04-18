@@ -32,6 +32,7 @@ export const H2 = styled.h2`
   font-weight: ${(props) => props.fw || 700};
   text-align: ${(props) => props.tA};
   margin: ${(props) => props.margin || "0"};
+  margin-top: ${(props) => props.mt || "0"};
   margin-bottom: ${(props) => props.mb || "0"};
   padding: ${(props) => props.padding || "0"};
   line-height: ${(props) => props.lh};

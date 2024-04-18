@@ -60,9 +60,9 @@ export const ClassTools = () => {
 
 const ToolsStyle = styled.div`
     .tools {
-        padding: 11.9rem 2.4rem;
+        padding: 5.9rem 2.4rem;
         @media(min-width: 1024px){
-            padding: 11.9rem 0;
+            padding: 11.9rem 9.6rem;
         }
         .tools-header {
             display: flex;

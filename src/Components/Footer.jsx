@@ -420,6 +420,17 @@ const Footer = ({p}) => {
                 Contact Us
               </P>
             </a>
+            <a href="#e">
+              <P
+                color="var(--Body-Text)"
+                fs="2.803vw"
+                mdfs="1.058vw"
+                lh="28px"
+                fw="400"
+              >
+                Privacy Policy
+              </P>
+            </a>
           </div>
 
           {/* mobile */}

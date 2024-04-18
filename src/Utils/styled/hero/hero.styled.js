@@ -6,7 +6,7 @@ export const StyledHeroHeader = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 72px 32px 32px 32px;
+  padding: 32px 32px 32px 32px;
   h1 {
     font-size: 3.2rem;
     font-style: normal;
@@ -93,7 +93,7 @@ export const StyledHeroFooter = styled.div`
   color: var(--Body-Text);
   font-weight: 400;
   line-height: 30px;
-  padding: 7.2rem 1.5rem 3.2rem 1.5rem;
+  padding: 3.2rem 1.5rem 3.2rem 1.5rem;
   section {
     display: none;
     p {

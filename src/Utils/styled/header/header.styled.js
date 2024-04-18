@@ -79,18 +79,18 @@ export const TopNavbabies = styled.nav`
 export const SideBarBabies = styled(TopNavbabies)`
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   gap: 25px;
   .addLinks {
     padding-left: 15px;
     header {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin: 2rem 0;
       font-weight: 700;
     }
     main {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       font-weight: 400;
       display: flex;
       flex-direction: column;

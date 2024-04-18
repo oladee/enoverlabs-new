@@ -30,13 +30,15 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
   display: flex;
   align-items: center;
   gap: 5px;
+  background-color: ${props => props.bg || "non"};
+  border: ${props => props.border || "1px solid #00f" };
   animation: ${breathing} 1.5s ease-in-out infinite;
   svg {
     width: 2.4rem;
     fill: #00f;
   }
   @media (min-width: 1024px) {
-    width: 17rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     animation: initial;
@@ -45,7 +47,7 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
       /* transition: text-align .5s ease; */
     }
     svg {
-      width: 0;
+      width: ${props => props.svgWidth || 0};
       transition: all .5s ease;
     }
     transition: all .5s ease;
@@ -64,10 +66,10 @@ export const StyledPrimaryButton = styled(StyledNewButton)`
   }
 `;
 
-export const PrimaryButton = ({ to = "#", Text, handleClick }) => {
+export const PrimaryButton = ({ to = "#", Text, svgWidth, border, bg, handleClick }) => {
   return (
     <Link to={to} onClick={handleClick}>
-      <StyledPrimaryButton>
+      <StyledPrimaryButton bg={bg} svgWidth={svgWidth} border={border}>
         <p>{Text}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -100,8 +102,8 @@ export const StyledSecondaryButton = styled(StyledPrimaryButton)`
 
 export const SecondaryButton = ({ to = "#", Text, handleClick, w, arrowDown}) => {
   return (
-    <Link to={to} onClick={handleClick} >
-      <StyledSecondaryButton w={w} >
+    <Link to={to}  onClick={handleClick} >
+      <StyledSecondaryButton w={w}>
         <h5>{Text}</h5>
         {
           arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -209,6 +211,27 @@ export const BlackButton = ({ to = "#", Text, handleClick, arrowDown}) => {
     </Link>
   );
 };
+
+export const SubmitButton = ({ to = "#", Text, handleClick, w, arrowDown}) => {
+  return (
+      <StyledSecondaryButton w={w}>
+        <h5>{Text}</h5>
+        {
+          arrowDown ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M6.34325 15.037L7.76125 13.626L11.0162 16.896L11.0293 3.29103L13.0293 3.29303L13.0162 16.861L16.2462 13.646L17.6562 15.063L11.9862 20.707L6.34325 15.037Z"/>
+        </svg> : <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="24"
+        viewBox="0 0 25 24"
+      >
+        <path d="M15.8691 17.6567L14.4581 16.2388L17.7281 12.9838L4.12306 12.9707L4.12506 10.9707L17.6931 10.9838L14.4781 7.75375L15.8951 6.34375L21.5391 12.0138L15.8691 17.6567Z" />
+      </svg>
+        }
+      </StyledSecondaryButton>
+  );
+};
+ 
 
 
 export const MainButton = ({ props, buttText }) => {

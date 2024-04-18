@@ -33,6 +33,13 @@ const Explore = () => {
                 autoplay : {
                     delay : 5000
                 }
+            },
+            1440 : {
+              slidesPerView : 2.5,
+                spaceBetween: 10,
+                autoplay : {
+                    delay : 5000
+                }
             }
         }
       }
@@ -72,6 +79,7 @@ const StyledExplore = styled.div`
       font-size: 32px;
       padding-bottom: 10px;
     }
+    padding: 0 9.6rem;
     padding-bottom: 144px;
   }
 `

@@ -229,3 +229,7 @@ export const benefit2 = [
 export const alumni = [
   ibrahim,jennifer,damola,funmilola,abiola,akeredolu,matthew,precious,adeoluwa,apalowo
 ]
+
+export const accessData = [
+  "Intensive training", "Project based learning", "Internship placement", "Global Certificate",
+]
