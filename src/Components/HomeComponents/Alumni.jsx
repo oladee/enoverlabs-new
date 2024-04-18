@@ -26,7 +26,7 @@ const Alumni = () => {
 export default Alumni;
 
 const StyledAlumni = styled.div`
-  padding: 10rem 3rem;
+  padding: 3rem 3rem;
   text-align: center;
   background: ${alumniLine};
   .imageGrid {

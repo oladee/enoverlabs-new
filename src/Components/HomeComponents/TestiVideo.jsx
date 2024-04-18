@@ -198,7 +198,7 @@ const TestiVideoStyled = styled.div`
     padding: 3.25rem 10% 3.25rem 10%;
     box-sizing: border-box;
     @media (max-width: 768px) {
-      padding: 3.25rem 5% 1.25rem 5%;
+      padding: 1.25rem 5% 1.25rem 5%;
     }
   }
 
