@@ -140,7 +140,7 @@ const Card = styled.div`
 `;
 const Firstcard = styled(Card)`
   width: 50%;
-  padding: 11.4rem 4.3rem 6.4rem 2rem;
+  padding: 11.4rem 0 6.4rem 2rem;
   @media (min-width: 1024px) {
     padding: 14.1rem 0rem 5.8rem 2.4rem;
     width:60%;
@@ -184,9 +184,12 @@ const Thirdcard = styled(Card)`
 `;
 const Fourthcard = styled(Card)`
   width: 50%;
-  padding: 12.8rem 0rem 3rem 2.1rem;
+  padding: 12.8rem 0rem 3rem 0rem;
+  h3{
+    padding: 0rem 0rem 0rem 1.1rem
+  }
   footer {
-    padding: 2rem 0.2rem;
+    padding: 2rem 1.1rem;
   }
   @media (min-width: 1024px) {
     padding: 14.1rem 5.1rem 2.4rem 2.4rem;
