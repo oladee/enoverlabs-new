@@ -1,7 +1,7 @@
 import React from 'react'
 import { H1, H3, H4 } from '../../Utils/styled/Typograpyhy'
 import { SecondaryButton } from '../../Utils/styled/Buttons'
-import kenyanFlag from "../../assets/icon/kenyaFlag.svg"
+import kenyanFlag from "../../assets/icon/kenyaFlag.png"
 import kenyaCity from "../../assets/icon/kenyaCity.png"
 import styled from 'styled-components'
 import location from "../../assets/icon/location.svg"

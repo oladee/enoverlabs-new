@@ -16,11 +16,9 @@ span.pagetext2::before {
 }
 
 .swiper-pagination-bullet {
-  position: relative;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  padding: 0 8px;
+  /* position: relative; */
+  margin:0 auto;
+  padding: 7px 0px;
   color: rgba(24, 24, 24, 0.35);
   width: 104px;
   font-size: 14px;
