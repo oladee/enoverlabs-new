@@ -33,9 +33,12 @@ const StyledAlumni = styled.div`
     display: grid;
     margin-top: 4rem;
     grid-template-columns: repeat(2, auto);
-    place-content: center;
+    /* place-content: center; */
     column-gap: 0.5rem;
     row-gap: 0.5rem;
+    img{
+      width : 100%
+    }
   }
   @media (min-width: 1024px) {
     padding: 14rem 9.6rem;
